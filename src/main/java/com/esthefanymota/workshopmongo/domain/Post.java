@@ -36,6 +36,14 @@ public class Post implements Serializable {
         this.author = author;
     }
 
+    public Post(Post x) {
+        id = x.getId();
+        date = x.getDate();
+        title = x.getTitle();
+        body = x.getBody();
+        author = x.getAuthor();
+    }
+
     public String getId() {
         return id;
     }
